@@ -1,0 +1,35 @@
+<style>
+    div
+    {
+        background-color:aqua;
+        font:italic 30px serif;
+        color:black;
+    }
+    header{
+        text-align:center;
+        font:bold 46px sans-serif;
+        color:white;
+    }
+    p{
+        margin-left:30%;
+    }
+    input {
+        background-color: aqua;
+        color: white;
+        margin-left: 5%;
+        border-color:black;
+    }
+</style>
+<body style="background-color: aqua;">
+    <div >
+        <header><img src="./assets/1.png" style="height:100px"  alt="login"/><br /> login</header>
+        <hr style="width:80%" size="3" color=white>
+        <form>
+            <p>Username <input type="text" #username placeholder="Username"  /></p>
+            <p>Password <input type="text" #password placeholder="Password"  /></p>
+            <p style="margin-left:80%"><button type="button" (click)="validator(username, password)">login</button><button type="button" (click)="goToReg()" >register</button></p>
+        </form> 
+    
+    </div>
+  
+</body>
